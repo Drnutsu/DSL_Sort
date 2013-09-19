@@ -1,4 +1,4 @@
-#include <iostream>
+๏ปฟ#include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
@@ -60,7 +60,7 @@ void insertionSort(int *arr,int n){
 
 void merge(int *a,int beginA,int endA,int beginB,int endB){
 	int c = 0;
-	int beginPrt = beginA; // เก็บค่า temp เอาไว้เพื่อกำหนดตำแหน่งเริ่ม ใส่ array ตอนสุดท้าย
+	int beginPrt = beginA; // เน€เธเนเธเธเนเธฒ temp เน€เธญเธฒเนเธงเนเน€เธเธทเนเธญเธเธณเธซเธเธ”เธ•เธณเนเธซเธเนเธเน€เธฃเธดเนเธก เนเธชเน array เธ•เธญเธเธชเธธเธ”เธ—เนเธฒเธข
 	int temp[10];
 	while(beginA <= endA && beginB <= endB){
 		if(a[beginA] <= a[beginB]){
@@ -82,7 +82,7 @@ void merge(int *a,int beginA,int endA,int beginB,int endB){
 		c++;
 		beginB++;
 	}
-	int j = 0; // temp จะมีการใส่ค่าที่ถูกต้องเริ่มต้นที่ 0 เสมอในขณะที่ i ไม่ขำเป็นต้องเริ่มที่ 0
+	int j = 0; // temp เธเธฐเธกเธตเธเธฒเธฃเนเธชเนเธเนเธฒเธ—เธตเนเธ–เธนเธเธ•เนเธญเธเน€เธฃเธดเนเธกเธ•เนเธเธ—เธตเน 0 เน€เธชเธกเธญเนเธเธเธ“เธฐเธ—เธตเน i เนเธกเนเธเธณเน€เธเนเธเธ•เนเธญเธเน€เธฃเธดเนเธกเธ—เธตเน 0
 	for(int i = beginPrt;i <= endB;i++){ 
 		a[i] = temp[j];
 		j++;
@@ -107,7 +107,7 @@ void QuickSort(int *arr,int left,int right){
 		while(i < j){
 			while(arr[i] < arr[pivot])i++;
 			while(arr[j] > arr[pivot])j--;
-			if(i < j){ //check ถ้าหากไม่มีการสลับเลยจะด้ข้ามไปเลย
+			if(i < j){ //check เธ–เนเธฒเธซเธฒเธเนเธกเนเธกเธตเธเธฒเธฃเธชเธฅเธฑเธเน€เธฅเธขเธเธฐเธ”เนเธเนเธฒเธกเนเธเน€เธฅเธข
 				//swap
 				swap(arr[i],arr[j]);
 				//move
